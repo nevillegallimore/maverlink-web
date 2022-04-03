@@ -1,0 +1,14 @@
+// import global styles
+@import './globals/variables';
+@import './globals/reset';
+@import './globals/container';
+
+// import component styles
+@import './components/hello-world';
+@import './components/button-link';
+@import './components/header';
+@import './components/footer';
+@import './components/section';
+
+// import page styles
+@import './pages/landing-page';

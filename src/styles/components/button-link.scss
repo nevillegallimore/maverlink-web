@@ -1,0 +1,25 @@
+.button-link {
+    display: block;
+    padding: .125rem 1rem;
+    border: 2px solid $color-brand;
+    border-radius: 1rem;
+    font-size: $font-size_tiny;
+    font-weight: 300;
+    text-decoration: none;
+    text-transform: uppercase;
+
+    @media screen and (min-width: $breakpoint-small--mid) {
+        padding: .25rem 2rem;
+        font-size: $font-size_small;
+    }
+
+    &.button-link--primary {
+        color: $color-white;
+        background-color: $color-brand;
+    }
+
+    &.button-link--secondary {
+        color: $color-brand;
+        background-color: $color-white;
+    }
+}

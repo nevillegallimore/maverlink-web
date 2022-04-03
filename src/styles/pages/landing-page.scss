@@ -1,0 +1,78 @@
+.landing-page {
+    [data-section="form"] {
+        .content {
+            max-width: $breakpoint-small--min;
+            margin: 0 auto;
+        }
+
+        .form {
+            max-width: $breakpoint-small--min;
+            margin: 0 auto;
+
+            .input-group {
+                &:not(:last-child) {
+                    margin-bottom: 1rem;
+                }
+
+                input.input {
+                    display: block;
+                    width: 100%;
+                    padding: 0 1rem;
+                    border: 2px solid $color-brand;
+                    border-radius: .5rem;
+                    font-size: $font_size-tiny;
+                    font-weight: 300;
+                    line-height: 2.5rem;
+                }
+
+                a.link {
+                    color: $color-grey;
+                    font-weight: 500;
+                }
+
+                button.button {
+                    display: block;
+                    width: 100%;
+                    color: $color-white;
+                    border: 2px solid $color-brand;
+                    border-radius: 0.5rem;
+                    background-color: $color-brand;
+                    font-size: $font_size-small;
+                    font-weight: 300;
+                    line-height: 2.5rem;
+                    text-transform: uppercase;
+                }
+
+                span.validation {
+                    display: block;
+                    color: $color-error;
+                    font-size: $font_size-tiny;
+                    font-weight: 500;
+                    line-height: 2rem;
+                }
+            }
+        }
+    }
+
+    [data-section="hero"] {
+        .section-content {
+            padding: 4rem 2rem;
+        }
+
+        .text {
+            margin-bottom: 2rem;
+            font-weight: 300;
+        }
+
+        .cta {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: center;
+
+            a.button-link {
+                display: inline-block;
+            }
+        }
+    }
+}

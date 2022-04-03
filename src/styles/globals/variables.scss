@@ -1,0 +1,29 @@
+// Breakpoints
+$breakpoint-small--min: 320px;
+$breakpoint-small--mid: 480px;
+$breakpoint-small--max: 759px;
+$breakpoint-medium--min: 760px;
+$breakpoint-medium--max: 959px;
+$breakpoint-large--min: 960px;
+$breakpoint-large--max: 1200px;
+
+// Colors
+$color-white: #ffffff;
+$color-grey: #808080;
+$color-dark: #333333;
+$color-black: #000000;
+$color-brand: #9e6381;
+$color-brand--light: #f1e8ec;
+$color-error: #d36a62;
+$color-warning: #edad3b;
+$color-info: #66a3ad;
+$color-success: #7da873;
+
+// Fonts
+$font_family-poppins: Poppins, --apple-system, 'Segoe UI', Ubuntu, 'Open Sans', Helvetica, sans-serif;
+$font_size-tiny: .875rem;
+$font_size-small: 1.125rem;
+$font_size-medium: 1.25rem;
+$font_size-large: 1.5rem;
+$font_size-huge: 1.75rem;
+$font_size-giant: 2rem;

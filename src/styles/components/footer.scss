@@ -1,0 +1,173 @@
+.footer {
+    background-color: $color-brand--light;
+
+    .footer-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: stretch;
+        padding: 2rem;
+
+        @media screen and (min-width: $breakpoint-medium--min) {
+            padding: 2rem 4rem;
+        }
+    }
+
+    .footer-items {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: stretch;
+        margin-bottom: 3rem;
+
+        @media screen and (min-width: $breakpoint-medium--min) {
+            flex-direction: row;
+        }
+    }
+
+    .footer-item {
+        &:not(:last-child) {
+            margin: 0 0 2rem 0;
+
+            @media screen and (min-width: $breakpoint-medium--min) {
+                margin: 0 3rem 0 0;
+            }
+        }
+
+        @media screen and (min-width: $breakpoint-medium--min) {
+            &:last-child {
+                margin-right: 3rem;
+            }
+
+            &.footer-item--grow {
+                flex: 1;
+                order: 2;
+                margin-right: 0;
+            }
+        }
+    }
+
+
+
+    .brand-logo {
+        width: 5rem;
+        height: 5rem;
+        margin: 0 auto;
+    }
+
+    .cta {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        margin: 0 auto;
+
+        > .cta-item:not(:last-child) {
+            margin-bottom: 1.25rem;
+        }
+
+        @media screen and (max-width: $breakpoint-small--max) {
+            align-items: center;
+            max-width: 320px;
+
+            .cta-text {
+                text-align: center;
+            }
+
+            .cta-app {
+                .app-store-badge {
+                    width: 160px;
+                    margin-bottom: 1.25rem;
+                }
+            }
+        }
+
+        @media screen and (min-width: $breakpoint-medium--min) {
+            align-items: flex-end;
+
+            > .cta-item:not(:last-child) {
+                margin-bottom: 1.25rem;
+            }
+
+            .cta-text {
+                text-align: right;
+            }
+
+            .cta-app {
+                .app-store-badge {
+                    width: 160px;
+                    margin-bottom: 1.25rem;
+                }
+            }
+        }
+
+        @media screen and (min-width: $breakpoint-large--min) {
+            align-items: flex-end;
+
+            > .cta-item:not(:last-child) {
+                margin-bottom: 1.25rem;
+            }
+
+            .cta-text {
+                text-align: right;
+            }
+
+            .cta-app {
+                display: flex;
+                flex-direction: row;
+                justify-content: flex-end;
+                align-items: center;
+
+                .app-store-link:not(:last-child) {
+                    margin-right: 1.25rem;
+                }
+
+                .app-store-badge {
+                    height: 3rem;
+                }
+            }
+        }
+    }
+
+    .nav-list {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: stretch;
+        width: 100%;
+        max-width: $breakpoint-small--min;
+        margin: 0 auto;
+        padding: 0;
+        list-style: none;
+
+        .nav-link {
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-start;
+            align-items: center;
+            color: $color-grey;
+            text-decoration: none;
+        }
+
+        .nav-link-text {
+            font-weight: 500;
+            line-height: 3rem;
+        }
+
+        .nav-link-icon {
+            width: 24px;
+            height: 24px;
+            margin-right: 1rem;
+
+            svg {
+                width: 24px;
+                height: 24px;
+                fill: $color-grey;
+            }
+        }
+    }
+
+    .copyright {
+        font-size: $font_size-tiny;
+        text-align: center;
+    }
+}

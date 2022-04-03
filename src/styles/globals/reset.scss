@@ -1,0 +1,59 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+html {
+    margin: 0;
+    padding: 0;
+    font-family: $font_family-poppins;
+    font-size: 100%;
+    font-weight: 300;
+    line-height: 1.5;
+}
+
+body {
+    min-width: $breakpoint-small--min;
+    margin: 0;
+    padding: 0;
+    color: $color_grey;
+    background-color: $color_white;
+    font-size: $font_size-small;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    display: block;
+}
+
+input, button {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    font-family: $font_family-poppins;
+    font-size: $font_size-tiny;
+    font-weight: 300;
+    line-height: 1.5rem;
+
+    @media screen and (min-width: 760px) {
+        font-size: $font_size-small;
+    }
+}
+
+.sr-only {
+	border: 0 !important;
+	clip: rect(1px, 1px, 1px, 1px) !important; /* 1 */
+	-webkit-clip-path: inset(50%) !important;
+		clip-path: inset(50%) !important;  /* 2 */
+	height: 1px !important;
+	margin: -1px !important;
+	overflow: hidden !important;
+	padding: 0 !important;
+	position: absolute !important;
+	width: 1px !important;
+	white-space: nowrap !important;            /* 3 */
+}
