@@ -15,7 +15,7 @@ export const Header = () => {
                         <a className="brand-link" href="#">
                             <img
                                 className="brand-logo"
-                                src="assets/icons/brand-logo-03.svg"
+                                src="/assets/icons/brand-logo-03.svg"
                                 alt="Maverlink Brand Logo"
                             />
                         </a>
@@ -25,8 +25,8 @@ export const Header = () => {
                     </div>
                     <div className="header-item">
                         <div className="action-links">
-                            <ButtonLink href="./register" text="Join" type="secondary" />
-                            <ButtonLink href="#" text="Sign In" type="primary" />
+                            <ButtonLink href="signup" text="Join" type="secondary" />
+                            <ButtonLink href="/" text="Sign In" type="primary" />
                         </div>
                     </div>
                 </div>

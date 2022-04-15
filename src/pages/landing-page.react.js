@@ -107,7 +107,7 @@ export const LandingPage = () => {
                 <div className="column no-padding">
                     <img
                         className="illustration"
-                        src="assets/images/landing-page-illustration-signin.svg"
+                        src="/assets/images/landing-page-illustration-signin.svg"
                         alt=""
                     />
                 </div>
@@ -122,7 +122,7 @@ export const LandingPage = () => {
                 <h3 className="tagline">The unique community for unique, creative, brave and truly independent maverick people - small business owners &amp; entrepreneurs</h3>
                 <p className="text centered">Find and connect with like-minded people all around the world. Share experiences, brainstorm ideas, create collaborations and grow your businesses together!</p>
                 <div className="cta">
-                    <ButtonLink href="register" text="Join" type="secondary" />
+                    <ButtonLink href="signup" text="Join" type="secondary" />
                 </div>
             </div>
         );
@@ -143,7 +143,7 @@ export const LandingPage = () => {
             type: 'landing',
             props: {
                 alignment: 'left',
-                imageSrc: 'assets/images/landing-page-illustration-find-your-people.png',
+                imageSrc: '/assets/images/landing-page-illustration-find-your-people.png',
                 name: 'find-your-people',
                 text: 'Find like-minded people in your industry in and beyond your location, from all around the world...',
                 title: 'Find YOUR PEOPLE',
@@ -153,7 +153,7 @@ export const LandingPage = () => {
             type: 'landing',
             props: {
                 alignment: 'right',
-                imageSrc: 'assets/images/landing-page-illustration-share-experiences.png',
+                imageSrc: '/assets/images/landing-page-illustration-share-experiences.png',
                 name: 'share-experiences',
                 text: 'Join or create your own unique niche communities and share ideas, knowledge, ideas and support each other...',
                 title: 'Share EXPERIENCES',
@@ -163,7 +163,7 @@ export const LandingPage = () => {
             type: 'landing',
             props: {
                 alignment: 'left',
-                imageSrc: 'assets/images/landing-page-illustration-succeed-together.png',
+                imageSrc: '/assets/images/landing-page-illustration-succeed-together.png',
                 name: 'succeed-together',
                 text: 'Create collaborations, share and learn skills from each other, exchange trade tools and any other useful items...',
                 title: 'Succeed TOGETHER',

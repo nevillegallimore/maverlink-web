@@ -1,0 +1,169 @@
+.sign-up-page {
+    background: url('/assets/images/landing-page-illustration-signin.svg');
+    background-position: bottom right;
+    background-repeat: no-repeat;
+
+    @media screen and (min-width: $breakpoint-medium--min) {
+        background-size: 50% auto;
+    }
+
+    .section {
+        padding-bottom: 20rem;
+    }
+
+    .content {
+        max-width: $breakpoint-medium--min;
+        margin: 0 auto;
+        padding: 0 2rem;
+    }
+
+    .title {
+        text-transform: uppercase;
+    }
+
+    .subtitle {
+        text-align: center;
+    }
+
+    .form {
+        margin-top: 4rem;
+
+        .input-group {
+            .input-group--inline {
+                display: flex;
+                flex-direction: row;
+                justify-content: flex-start;
+                align-items: center;
+
+                > label {
+                    font-size: $font_size-tiny;
+                }
+            }
+        }
+
+        input.input {
+            display: block;
+            width: 100%;
+            padding: 0 1rem;
+            border: 2px solid $color-brand;
+            border-radius: .5rem;
+            font-size: $font_size-tiny;
+            font-weight: 300;
+            line-height: 2.5rem;
+
+            &.input--password {
+                flex: 1;
+                border-width: 2px 0 2px 2px;
+                border-radius: .5rem 0 0 .5rem;
+            }
+        }
+
+        input.checkbox {
+            width: 26px;
+            height: 26px;
+            margin-right: 1rem;
+            border: 2px solid $color-brand;
+            border-radius: .5rem;
+
+            &:checked {
+                background-color: $color-brand;
+            }
+
+            &:checked::before {
+                content: '';
+                display: inline-block;
+                transform: rotate(45deg);
+                width: 7px;
+                height: 14px;
+                margin: 2px 0 0 8px;
+                border-bottom: 3px solid #ffffff;
+                border-right: 3px solid #ffffff;
+            }
+        }
+
+        button.button {
+            display: block;
+            width: 100%;
+            color: $color-white;
+            border: 2px solid $color-brand;
+            border-radius: 0.5rem;
+            background-color: $color-brand;
+            font-size: $font_size-small;
+            font-weight: 300;
+            line-height: 2.5rem;
+            text-transform: uppercase;
+        }
+
+        button.input-action {
+            width: 5rem;
+            padding: 0 1rem;
+            color: $color-grey;
+            border-color: $color-brand;
+            border-style: solid;
+            border-width: 2px 2px 2px 0;
+            border-radius: 0 .5rem .5rem 0;
+            background-color: #ffffff;
+            font-size: $font_size-tiny;
+            font-weight: 300;
+            line-height: 2.5rem;
+            text-align: center;
+            cursor: pointer;
+
+            &:hover {
+                font-weight: 500;
+            }
+        }
+
+        span.validation {
+            display: block;
+            color: $color-error;
+            font-size: $font_size-tiny;
+            font-weight: 500;
+            line-height: 2rem;
+        }
+
+        .row {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: flex-start;
+
+            @media screen and (min-width: $breakpoint-medium--min) {
+                flex-direction: row;
+            }
+
+            &:not(:last-child) {
+                margin-bottom: 1rem;
+            }
+        }
+
+        .column {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: stretch;
+            width: 100%;
+            padding: 0;
+
+            &.column-50 {
+                &:first-child {
+                    margin-bottom: 1rem;
+                }
+            }
+
+            @media screen and (min-width: $breakpoint-medium--min) {
+                &.column-50 {
+                    width: calc(50% - .5rem);
+
+                    &:first-child {
+                        margin: 0 .5rem 0 0;
+                    }
+
+                    &:last-child {
+                        margin: 0 0 0 .5rem;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,45 @@
+.verify-email-page {
+    .content {
+        max-width: $breakpoint-small--max;
+        margin: 0 auto;
+        padding: 0 2rem;
+    }
+
+    .headline {
+        margin-bottom: 4rem;
+        text-transform: uppercase;
+    }
+
+    .action-text {
+        @extend .subtitle;
+        font-style: italic;
+        letter-spacing: .25em;
+
+        &.text-centered {
+            text-align: center;
+        }
+
+        &:not(:last-child) {
+            margin-bottom: 4rem;
+        }
+
+        &.unpadded {
+            margin-bottom: 2rem;
+        }
+    }
+
+    button.button {
+        display: block;
+        max-width: $breakpoint-small--min;
+        width: 100%;
+        margin: 0 auto 1rem auto;
+        color: $color-white;
+        border: 2px solid $color-brand;
+        border-radius: 0.5rem;
+        background-color: $color-brand;
+        font-size: $font_size-small;
+        font-weight: 300;
+        line-height: 2.5rem;
+        text-transform: uppercase;
+    }
+}
