@@ -1,7 +1,7 @@
 // import external dependencies
 import React from 'react';
 import { createRoot } from "react-dom/client";
-import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import { BrowserRouter, HashRouter, Route, Routes } from 'react-router-dom';
 
 // import internal dependencies
 import { Footer } from '@self/components/footer';
@@ -14,7 +14,7 @@ import { VerifyEmailPage } from './pages/verify-email-page';
 
 const Application = () => {
     return (
-        <BrowserRouter>
+        <HashRouter>
             <div className="container">
                 <Header />
 
@@ -26,7 +26,7 @@ const Application = () => {
 
                 <Footer />
             </div>
-        </BrowserRouter>
+        </HashRouter>
     );
 };
 

@@ -8,9 +8,9 @@ const path = require('path');
 
 const server = express();
 
-server.use(express.static('build'));
+server.use('/maverlink-web/', express.static('build'));
 
-server.get('/*', (request, response) => {
+server.get('/maverlink-web/', (request, response) => {
     response.sendFile(path.resolve(__dirname, './build/index.html'));
 });
 
