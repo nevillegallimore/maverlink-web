@@ -75,9 +75,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _self_components_button_link__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @self/components/button-link */ "./src/components/button-link/index.js");
+/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/index.js");
 // import external dependencies
- // import internal dependencies
 
  ////////////////////////////////////////////////////////////////////////////////////////////////////
 
@@ -98,7 +97,7 @@ var Footer = function Footer() {
     href: "#"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("img", {
     className: "brand-logo",
-    src: "assets/icons/brand-logo-02.svg",
+    src: "/maverlink-web/assets/icons/brand-logo-02.svg",
     alt: "Maverlink Brand Logo"
   }))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
     className: "footer-item footer-item--grow"
@@ -110,11 +109,10 @@ var Footer = function Footer() {
     className: "cta-text"
   }, "Join our MAVERICK COMMUNITY of most creative and independent people, just like you! Together we are unstoppable!")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
     className: "cta-item"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_self_components_button_link__WEBPACK_IMPORTED_MODULE_1__.ButtonLink, {
-    href: "signup",
-    text: "Join",
-    type: "primary"
-  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__.Link, {
+    className: "button-link button-link--primary",
+    to: "/signup"
+  }, "Join")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
     className: "cta-item"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
     className: "cta-app"
@@ -123,14 +121,14 @@ var Footer = function Footer() {
     className: "app-store-link"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("img", {
     className: "app-store-badge",
-    src: "assets/icons/app-store-badge.svg",
+    src: "/maverlink-web/assets/icons/app-store-badge.svg",
     alt: "Download on the App Store"
   })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("a", {
     href: "#",
     className: "app-store-link"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("img", {
     className: "app-store-badge",
-    src: "assets/icons/google-play-badge.svg",
+    src: "/maverlink-web/assets/icons/google-play-badge.svg",
     alt: "Get it on Google Play"
   })))))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
     className: "footer-item"
@@ -255,8 +253,10 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/index.js");
 /* harmony import */ var _self_components_button_link__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @self/components/button-link */ "./src/components/button-link/index.js");
 // import external dependencies
+
  // import internal dependencies
 
  ////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -275,7 +275,7 @@ var Header = function Header() {
     href: "#"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("img", {
     className: "brand-logo",
-    src: "/assets/icons/brand-logo-03.svg",
+    src: "/maverlink-web/assets/icons/brand-logo-03.svg",
     alt: "Maverlink Brand Logo"
   }))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
     className: "header-item"
@@ -285,15 +285,13 @@ var Header = function Header() {
     className: "header-item"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
     className: "action-links"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_self_components_button_link__WEBPACK_IMPORTED_MODULE_1__.ButtonLink, {
-    href: "signup",
-    text: "Join",
-    type: "secondary"
-  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_self_components_button_link__WEBPACK_IMPORTED_MODULE_1__.ButtonLink, {
-    href: "/",
-    text: "Sign In",
-    type: "primary"
-  }))))));
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_2__.Link, {
+    className: "button-link button-link--secondary",
+    to: "/"
+  }, "Sign In"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_2__.Link, {
+    className: "button-link button-link--primary",
+    to: "/signup"
+  }, "Join"))))));
 };
 Header.displayName = 'Header'; ////////////////////////////////////////////////////////////////////////////////////////////////////
 
@@ -454,6 +452,7 @@ function _iterableToArrayLimit(arr, i) { var _i = arr == null ? null : typeof Sy
 function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
 
 // import external dependencies
+
  // import internal dependencies
 
 
@@ -557,7 +556,7 @@ var LandingPage = function LandingPage() {
       className: "column no-padding"
     }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("img", {
       className: "illustration",
-      src: "/assets/images/landing-page-illustration-signin.svg",
+      src: "/maverlink-web/assets/images/landing-page-illustration-signin.svg",
       alt: ""
     })));
   };
@@ -592,7 +591,7 @@ var LandingPage = function LandingPage() {
     type: 'landing',
     props: {
       alignment: 'left',
-      imageSrc: '/assets/images/landing-page-illustration-find-your-people.png',
+      imageSrc: '/maverlink-web/assets/images/landing-page-illustration-find-your-people.png',
       name: 'find-your-people',
       text: 'Find like-minded people in your industry in and beyond your location, from all around the world...',
       title: 'Find YOUR PEOPLE'
@@ -601,7 +600,7 @@ var LandingPage = function LandingPage() {
     type: 'landing',
     props: {
       alignment: 'right',
-      imageSrc: '/assets/images/landing-page-illustration-share-experiences.png',
+      imageSrc: '/maverlink-web/assets/images/landing-page-illustration-share-experiences.png',
       name: 'share-experiences',
       text: 'Join or create your own unique niche communities and share ideas, knowledge, ideas and support each other...',
       title: 'Share EXPERIENCES'
@@ -610,7 +609,7 @@ var LandingPage = function LandingPage() {
     type: 'landing',
     props: {
       alignment: 'left',
-      imageSrc: '/assets/images/landing-page-illustration-succeed-together.png',
+      imageSrc: '/maverlink-web/assets/images/landing-page-illustration-succeed-together.png',
       name: 'succeed-together',
       text: 'Create collaborations, share and learn skills from each other, exchange trade tools and any other useful items...',
       title: 'Succeed TOGETHER'
@@ -648,6 +647,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router/index.js");
 /* harmony import */ var _self_components_section__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @self/components/section */ "./src/components/section/index.js");
 /* harmony import */ var _self_utils_is_email__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @self/utils/is-email */ "./src/utils/is-email.js");
 /* harmony import */ var _self_utils_is_password__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @self/utils/is-password */ "./src/utils/is-password.js");
@@ -670,6 +670,7 @@ function _iterableToArrayLimit(arr, i) { var _i = arr == null ? null : typeof Sy
 function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
 
 // import external dependencies
+
  // import internal dependencies
 
 
@@ -701,6 +702,8 @@ var SignUpPage = function SignUpPage() {
       _useState6 = _slicedToArray(_useState5, 2),
       isPasswordMasked = _useState6[0],
       setIsPasswordMasked = _useState6[1];
+
+  var navigate = (0,react_router_dom__WEBPACK_IMPORTED_MODULE_4__.useNavigate)();
 
   var togglePasswordMode = function togglePasswordMode() {
     setIsPasswordMasked(!isPasswordMasked);
@@ -786,7 +789,7 @@ var SignUpPage = function SignUpPage() {
     if (isSubmitable) {
       // TODO: Submit form to server for validation and account creation. Then respond with
       //       confirmation or error, so the user can be redirected accordingly.
-      window.location.href = '/verify-email';
+      navigate('/verify-email');
     }
   };
 
@@ -37712,7 +37715,7 @@ __webpack_require__.r(__webpack_exports__);
  ////////////////////////////////////////////////////////////////////////////////////////////////////
 
 var Application = function Application() {
-  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_7__.BrowserRouter, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_7__.HashRouter, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
     className: "container"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_self_components_header__WEBPACK_IMPORTED_MODULE_3__.Header, null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_8__.Routes, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_8__.Route, {
     path: "/",
