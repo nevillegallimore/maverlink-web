@@ -4,7 +4,7 @@ import PropTypes from 'prop-types'
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 
-export const Section = ({ children, name }) => {
+export const Section = ({ background, children, name }) => {
     return (
         <section className="section" data-section={name}>
             <div className="page-width">
@@ -20,6 +20,7 @@ Section.propTypes = {
     name: PropTypes.string.isRequired,
 };
 Section.defaultProps = {
+    background: {},
     children: null,
 };
 

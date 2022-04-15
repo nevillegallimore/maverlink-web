@@ -18,9 +18,11 @@
         "url": "https://github.com/nevillegallimore/maverlink-web/issues"
     },
     "dependencies": {
+        "express": "^4.17.3",
         "react": "^18.0.0",
         "react-dom": "^18.0.0",
-        "react-router": "^6.3.0"
+        "react-router": "^6.3.0",
+        "react-router-dom": "^6.3.0"
     },
     "devDependencies": {
         "@babel/core": "^7.17.8",
@@ -41,7 +43,9 @@
         "build:source": "webpack --config ./webpack.config.js",
         "build:styles": "node-sass ./src/styles/main.scss ./build/css/main.css --source-map true",
         "clean": "rm -rf ./build",
-        "watch": "npm run clean && npm run build:assets && npm run build:markup && concurrently \"npm run watch:source\" \"npm run watch:styles\"",
+        "start": "node ./server.js",
+        "watch": "npm run clean && npm run build:assets && npm run build:markup && concurrently \"npm run watch:server\" \"npm run watch:source\" \"npm run watch:styles\"",
+        "watch:server": "nodemon ./server.js",
         "watch:source": "npm run build:source -- --watch",
         "watch:styles": "npm run build:styles && npm run build:styles -- --watch"
     }

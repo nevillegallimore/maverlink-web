@@ -33,7 +33,7 @@ export const Footer = () => {
                                 </div>
                                 <div className="cta-item">
                                     <ButtonLink
-                                        href="register"
+                                        href="signup"
                                         text="Join"
                                         type="primary"
                                     />

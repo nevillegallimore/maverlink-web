@@ -349,4 +349,153 @@ input, button {
   .landing-page [data-section="hero"] .cta a.button-link {
     display: inline-block; }
 
+.sign-up-page {
+  background: url("/assets/images/landing-page-illustration-signin.svg");
+  background-position: bottom right;
+  background-repeat: no-repeat; }
+  @media screen and (min-width: 760px) {
+    .sign-up-page {
+      background-size: 50% auto; } }
+  .sign-up-page .section {
+    padding-bottom: 20rem; }
+  .sign-up-page .content {
+    max-width: 760px;
+    margin: 0 auto;
+    padding: 0 2rem; }
+  .sign-up-page .title {
+    text-transform: uppercase; }
+  .sign-up-page .subtitle, .sign-up-page .verify-email-page .action-text, .verify-email-page .sign-up-page .action-text {
+    text-align: center; }
+  .sign-up-page .form {
+    margin-top: 4rem; }
+    .sign-up-page .form .input-group .input-group--inline {
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-start;
+      align-items: center; }
+      .sign-up-page .form .input-group .input-group--inline > label {
+        font-size: 0.875rem; }
+    .sign-up-page .form input.input {
+      display: block;
+      width: 100%;
+      padding: 0 1rem;
+      border: 2px solid #9e6381;
+      border-radius: .5rem;
+      font-size: 0.875rem;
+      font-weight: 300;
+      line-height: 2.5rem; }
+      .sign-up-page .form input.input.input--password {
+        flex: 1;
+        border-width: 2px 0 2px 2px;
+        border-radius: .5rem 0 0 .5rem; }
+    .sign-up-page .form input.checkbox {
+      width: 26px;
+      height: 26px;
+      margin-right: 1rem;
+      border: 2px solid #9e6381;
+      border-radius: .5rem; }
+      .sign-up-page .form input.checkbox:checked {
+        background-color: #9e6381; }
+      .sign-up-page .form input.checkbox:checked::before {
+        content: '';
+        display: inline-block;
+        transform: rotate(45deg);
+        width: 7px;
+        height: 14px;
+        margin: 2px 0 0 8px;
+        border-bottom: 3px solid #ffffff;
+        border-right: 3px solid #ffffff; }
+    .sign-up-page .form button.button {
+      display: block;
+      width: 100%;
+      color: #ffffff;
+      border: 2px solid #9e6381;
+      border-radius: 0.5rem;
+      background-color: #9e6381;
+      font-size: 1.125rem;
+      font-weight: 300;
+      line-height: 2.5rem;
+      text-transform: uppercase; }
+    .sign-up-page .form button.input-action {
+      width: 5rem;
+      padding: 0 1rem;
+      color: #808080;
+      border-color: #9e6381;
+      border-style: solid;
+      border-width: 2px 2px 2px 0;
+      border-radius: 0 .5rem .5rem 0;
+      background-color: #ffffff;
+      font-size: 0.875rem;
+      font-weight: 300;
+      line-height: 2.5rem;
+      text-align: center;
+      cursor: pointer; }
+      .sign-up-page .form button.input-action:hover {
+        font-weight: 500; }
+    .sign-up-page .form span.validation {
+      display: block;
+      color: #d36a62;
+      font-size: 0.875rem;
+      font-weight: 500;
+      line-height: 2rem; }
+    .sign-up-page .form .row {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: flex-start; }
+      @media screen and (min-width: 760px) {
+        .sign-up-page .form .row {
+          flex-direction: row; } }
+      .sign-up-page .form .row:not(:last-child) {
+        margin-bottom: 1rem; }
+    .sign-up-page .form .column {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: stretch;
+      width: 100%;
+      padding: 0; }
+      .sign-up-page .form .column.column-50:first-child {
+        margin-bottom: 1rem; }
+      @media screen and (min-width: 760px) {
+        .sign-up-page .form .column.column-50 {
+          width: calc(50% - .5rem); }
+          .sign-up-page .form .column.column-50:first-child {
+            margin: 0 .5rem 0 0; }
+          .sign-up-page .form .column.column-50:last-child {
+            margin: 0 0 0 .5rem; } }
+
+.verify-email-page .content {
+  max-width: 759px;
+  margin: 0 auto;
+  padding: 0 2rem; }
+
+.verify-email-page .headline {
+  margin-bottom: 4rem;
+  text-transform: uppercase; }
+
+.verify-email-page .action-text {
+  font-style: italic;
+  letter-spacing: .25em; }
+  .verify-email-page .action-text.text-centered {
+    text-align: center; }
+  .verify-email-page .action-text:not(:last-child) {
+    margin-bottom: 4rem; }
+  .verify-email-page .action-text.unpadded {
+    margin-bottom: 2rem; }
+
+.verify-email-page button.button {
+  display: block;
+  max-width: 320px;
+  width: 100%;
+  margin: 0 auto 1rem auto;
+  color: #ffffff;
+  border: 2px solid #9e6381;
+  border-radius: 0.5rem;
+  background-color: #9e6381;
+  font-size: 1.125rem;
+  font-weight: 300;
+  line-height: 2.5rem;
+  text-transform: uppercase; }
+
 /*# sourceMappingURL=main.css.map */
