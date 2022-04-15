@@ -1,5 +1,6 @@
 // import external dependencies
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom'
 
 // import internal dependencies
 import { ButtonLink } from '@self/components/button-link';
@@ -67,9 +68,7 @@ export const LandingPage = () => {
                                     onKeyDown={onSoftSubmit}
                                     required={true}
                                 />
-                                {errors.email && (
-                                    <span className="validation">{errors.email}</span>
-                                )}
+                                {errors.email && <span className="validation">{errors.email}</span>}
                             </div>
 
                             <div className="input-group">
@@ -107,7 +106,7 @@ export const LandingPage = () => {
                 <div className="column no-padding">
                     <img
                         className="illustration"
-                        src="/assets/images/landing-page-illustration-signin.svg"
+                        src="/maverlink-web/assets/images/landing-page-illustration-signin.svg"
                         alt=""
                     />
                 </div>
@@ -143,7 +142,7 @@ export const LandingPage = () => {
             type: 'landing',
             props: {
                 alignment: 'left',
-                imageSrc: '/assets/images/landing-page-illustration-find-your-people.png',
+                imageSrc: '/maverlink-web/assets/images/landing-page-illustration-find-your-people.png',
                 name: 'find-your-people',
                 text: 'Find like-minded people in your industry in and beyond your location, from all around the world...',
                 title: 'Find YOUR PEOPLE',
@@ -153,7 +152,7 @@ export const LandingPage = () => {
             type: 'landing',
             props: {
                 alignment: 'right',
-                imageSrc: '/assets/images/landing-page-illustration-share-experiences.png',
+                imageSrc: '/maverlink-web/assets/images/landing-page-illustration-share-experiences.png',
                 name: 'share-experiences',
                 text: 'Join or create your own unique niche communities and share ideas, knowledge, ideas and support each other...',
                 title: 'Share EXPERIENCES',
@@ -163,7 +162,7 @@ export const LandingPage = () => {
             type: 'landing',
             props: {
                 alignment: 'left',
-                imageSrc: '/assets/images/landing-page-illustration-succeed-together.png',
+                imageSrc: '/maverlink-web/assets/images/landing-page-illustration-succeed-together.png',
                 name: 'succeed-together',
                 text: 'Create collaborations, share and learn skills from each other, exchange trade tools and any other useful items...',
                 title: 'Succeed TOGETHER',

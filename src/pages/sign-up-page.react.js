@@ -1,5 +1,6 @@
 // import external dependencies
 import React, { useEffect, useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 
 // import internal dependencies
 import { Section } from '@self/components/section';
@@ -22,6 +23,7 @@ export const SignUpPage = () => {
     });
     const [errors, setErrors] = useState({});
     const [isPasswordMasked, setIsPasswordMasked] = useState(true);
+    const navigate = useNavigate();
 
     const togglePasswordMode = () => {
         setIsPasswordMasked(!isPasswordMasked);
@@ -96,7 +98,7 @@ export const SignUpPage = () => {
         if (isSubmitable) {
             // TODO: Submit form to server for validation and account creation. Then respond with
             //       confirmation or error, so the user can be redirected accordingly.
-            window.location.href = '/verify-email';
+            navigate('/verify-email');
         }
     };;
 

@@ -1,8 +1,6 @@
 // import external dependencies
 import React from 'react';
-
-// import internal dependencies
-import { ButtonLink } from '@self/components/button-link';
+import { Link } from 'react-router-dom';
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 
@@ -17,7 +15,7 @@ export const Footer = () => {
                             <a className="brand-link" href="#">
                                 <img
                                     className="brand-logo"
-                                    src="assets/icons/brand-logo-02.svg"
+                                    src="/maverlink-web/assets/icons/brand-logo-02.svg"
                                     alt="Maverlink Brand Logo"
                                 />
                             </a>
@@ -26,31 +24,26 @@ export const Footer = () => {
                             <div className="cta">
                                 <div className="cta-item">
                                     <p className="cta-text">
-                                        Join our MAVERICK COMMUNITY of most
-                                        creative and independent people, just
-                                        like you! Together we are unstoppable!
+                                        Join our MAVERICK COMMUNITY of most creative and independent
+                                        people, just like you! Together we are unstoppable!
                                     </p>
                                 </div>
                                 <div className="cta-item">
-                                    <ButtonLink
-                                        href="signup"
-                                        text="Join"
-                                        type="primary"
-                                    />
+                                    <Link className="button-link button-link--primary" to="/signup">Join</Link>
                                 </div>
                                 <div className="cta-item">
                                     <div className="cta-app">
                                         <a href="#" className="app-store-link">
                                             <img
                                                 className="app-store-badge"
-                                                src="assets/icons/app-store-badge.svg"
+                                                src="/maverlink-web/assets/icons/app-store-badge.svg"
                                                 alt="Download on the App Store"
                                             />
                                         </a>
                                         <a href="#" className="app-store-link">
                                             <img
                                                 className="app-store-badge"
-                                                src="assets/icons/google-play-badge.svg"
+                                                src="/maverlink-web/assets/icons/google-play-badge.svg"
                                                 alt="Get it on Google Play"
                                             />
                                         </a>
@@ -97,7 +90,10 @@ export const Footer = () => {
                                 <li className="nav-list-item">
                                     <a className="nav-link" href="#">
                                         <span className="nav-link-icon" aria-hidden="true">
-                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                            <svg
+                                                xmlns="http://www.w3.org/2000/svg"
+                                                viewBox="0 0 24 24"
+                                            >
                                                 <rect x="0" y="0" width="100%" height="100%" />
                                             </svg>
                                         </span>
@@ -107,7 +103,10 @@ export const Footer = () => {
                                 <li className="nav-list-item">
                                     <a className="nav-link" href="#">
                                         <span className="nav-link-icon" aria-hidden="true">
-                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                            <svg
+                                                xmlns="http://www.w3.org/2000/svg"
+                                                viewBox="0 0 24 24"
+                                            >
                                                 <rect x="0" y="0" width="100%" height="100%" />
                                             </svg>
                                         </span>
@@ -117,9 +116,7 @@ export const Footer = () => {
                             </ul>
                         </div>
                     </div>
-                    <p className="copyright">
-                        Copyright {year} MAVERLINK. All rights reserved.
-                    </p>
+                    <p className="copyright">Copyright {year} MAVERLINK. All rights reserved.</p>
                 </div>
             </div>
         </footer>
